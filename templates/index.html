@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel = "stylesheet" href = "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+
+        <form action="/", method = 'POST'>
+            Le but est de prédire le salaire en fonction de vos années d'expérience.<br>
+            Entrez votre nombre d'années d'expérience :<br>
+            <input type="text" name="experience"><br>
+            <input type="submit" value="Submit">
+        </form> 
+
+        <br>
+        <p>Pour {{ exp }} années d'expérience, vous allez gagner {{ res }} € </p>        
+    
+</body>
+</html>
